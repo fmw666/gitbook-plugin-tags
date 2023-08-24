@@ -68,9 +68,9 @@ module.exports = {
         }
       })
       if (page.type === 'markdown') {
-        var tags_before = eol + '<i class="fa fa-tags" aria-hidden="true"></i> ' + tags_before_.join(' ') + eol;
+        var tags_before = eol + '<i class="fa fa-tags" aria-hidden="true"></i> ' + tags_before_.join(' ') + `<span>{{ file.mtime }}</span>` + eol;
       } else {
-        var tags_before = eol + '*ADOCTAGS* ' + tags_before_.join(' ') + eol;
+        var tags_before = eol + '*ADOCTAGS* ' + tags_before_.join(' ') + `<span>{{ file.mtime }}</span>` + eol;
       }
 
       // override raw tags in page
