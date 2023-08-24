@@ -1,6 +1,8 @@
 .tags {
   color: #0e83cd;
   display:        inline-block;
+  width: 100%;
+  line-height: 34px;
 }
 
 .tags a {
@@ -16,4 +18,10 @@
   color: #fff;
   text-decoration: none;
   background-color: #25a1f0;
+}
+
+.tags span {
+  float: right;
+  color: #858585;
+  font-style: italic;
 }
